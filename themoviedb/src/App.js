@@ -20,7 +20,7 @@ function App() {
 
     const type = searchMovie ? 'search' : 'discover';
 
-    const {data: {results}} = await axios.get(`${API_URL}/${type}/movie?api_key=${API_KEY}&sort_by=popularity.desc`, {
+    const {data: {results}} = await axios.get(`${API_URL}/${type}/movie?api_key=${API_KEY}&primary_release_date.gte=2022-01-01&primary_release_date.lte=2022-08-01&sort_by=popularity.desc`, {
       params: {
         api_key: API_KEY,
         query: searchMovie
@@ -66,6 +66,9 @@ function App() {
         <div className={'hero-content max-center'}>
           <h2 className={'hero-title'}>{detailsMovie.title}</h2>
           {detailsMovie.overview ? <p className={'hero-overview'}> {detailsMovie.overview} </p> : null}
+          <p className='hero-popularity'>Popularity: {detailsMovie.popularity}</p>
+          <p className='hero-release'>Release date: {detailsMovie.release_date}</p>
+          <p className='hero-vote'>Vote average: {detailsMovie.vote_average}</p>
         </div>
       </div>
 
