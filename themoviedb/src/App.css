@@ -1,0 +1,87 @@
+@import url("./fonts/stylesheet.css");
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #494697;
+  color: #FFFF;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /*Estilos estándar experimentales (Principalmente Firefox)*/
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.max-center{
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.movie-card{
+  cursor: pointer;
+}
+
+.movie-cover{
+  width: 100%;
+}
+
+.movie-placeholder{
+  min-height: 359px;
+  background-color: #0000;
+  color: #FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero{
+  min-height: 500px;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-content{
+  padding: 15px;
+}
+
+.hero-title, .hero-overview {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-title {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.hero-overview {
+  font-size: 18px;
+}
+
+
