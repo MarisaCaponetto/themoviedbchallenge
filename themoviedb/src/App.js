@@ -20,7 +20,7 @@ function App() {
 
     const type = searchMovie ? 'search' : 'discover';
 
-    const {data: {results}} = await axios.get(`${API_URL}/${type}/movie?api_key=${API_KEY}&primary_release_date.gte=2022-01-01&primary_release_date.lte=2022-08-01&sort_by=popularity.desc`, {
+    const {data: {results}} = await axios.get(`${API_URL}/${type}/movie?api_key=${API_KEY}&primary_release_date.gte=2022-01-01&primary_release_date.lte=2022-06-01&sort_by=popularity.desc`, {
       params: {
         api_key: API_KEY,
         query: searchMovie
