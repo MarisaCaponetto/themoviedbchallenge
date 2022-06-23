@@ -1,0 +1,1 @@
+The movie database app is a challenge I made using The Movie Database API and React.js. On this application you will see movies ordered by popularity. Also, you can search for a movie by title, and you can see more details of a particular movie, just clicking on its poster or image. 
